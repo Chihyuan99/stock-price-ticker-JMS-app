@@ -12,17 +12,17 @@ While using durable subscriptions, there are several limitations:
 
 ## Sample JMS selectors:
 ```
-    //selector = System.getProperty("QuoteSel", "symbol = 'GOOG'");
-    //selector = System.getProperty("QuoteSel", "symbol IN ('GOOG','AAPL')");
-    selector = System.getProperty("QuoteSel", "symbol = 'GOOG' AND price < 500");
+//selector = System.getProperty("QuoteSel", "symbol = 'GOOG'");
+//selector = System.getProperty("QuoteSel", "symbol IN ('GOOG','AAPL')");
+selector = System.getProperty("QuoteSel", "symbol = 'GOOG' AND price < 500");
 ```
 
 ## DEMO:
 1. Run TickerPublisher.java, we can see that the producer is sending stock prices
-<img src="images/1.png">
+<img src="images/1.png" width="70%" >
 
 2. Run SelectiveTickerConsumer.java, we can see that the consumer is receiving the stock price update events that our producer is firing with filtered conditions
-<img src="images/2.png">
+<img src="images/2.png" width="70%" >
 
 3. In the ActiveMQ Admin Console
 <img src="images/3.png">
