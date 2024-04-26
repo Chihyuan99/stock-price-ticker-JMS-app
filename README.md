@@ -18,7 +18,7 @@ selector = System.getProperty("QuoteSel", "symbol = 'GOOG' AND price < 500");
 ```
 
 ## DEMO:
-1. Run TickerPublisher.java, we can see that the producer is sending stock prices
+1. Run TickerPublisher.java, we can see that the producer is sending stock prices.
 <img src="images/1.png" width="70%" >
 
 2. Run SelectiveTickerConsumer.java, we can see that the consumer is receiving the stock price update events that our producer is firing with filtered conditions
