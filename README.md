@@ -24,7 +24,7 @@ selector = System.getProperty("QuoteSel", "symbol = 'GOOG' AND price < 500");
 2. Run SelectiveTickerConsumer.java, we can see that the consumer is receiving the stock price update events that our producer is firing with filtered conditions.
 <img src="images/2.png" width="70%" >
 
-3. In the ActiveMQ Admin Console.
+3. In the ActiveMQ Admin Console
 <img src="images/3.png">
 
 
